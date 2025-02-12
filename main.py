@@ -1,18 +1,24 @@
-import pygame
+import serial
+import pyautogui
 
-background_colour = (234, 212, 252) 
+ser = serial.Serial('COM5', 9600)
 
-screen = pygame.display.set_mode((500, 480)) 
+while True:
+    if ser.in_waiting > 0:
+        data = ser.readline().decode('uft-8').rstrip()
 
-pygame.display.set_caption('tesr window') 
- 
-screen.fill(background_colour) 
+        if data == 'u':
+            pyautogui.press('up')
+            print('success')
 
-pygame.display.flip() 
+        elif data == 'd':
+            pyautogui.press('down')  
+            print('success')
+       
+        elif data == 'l':
+            pyautogui.press('left')  
+            print('success')
 
-running = True
-
-while running: 
-    for event in pygame.event.get():       
-        if event.type == pygame.QUIT: 
-            running = False
+        elif data == 'r':
+            pyautogui.press('right')  
+            print('success')
