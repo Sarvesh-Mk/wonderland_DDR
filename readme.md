@@ -1,5 +1,9 @@
 **A Dance Dance Revolution game but with a unique twist, whenever you press a wrong note, the user gets tased.**
 
+Wait theres a reel about Death Death Revolution? :O
+
+https://www.instagram.com/reel/C3yZLLAAHuG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+
 This was my team's project for Hack Club's Wonderland '24 and it is the culmination of bad wiring, dirty code and a lot of shockingly good time ;)
 
 This was our inital stress test of the tasers power using a peeled potato skin:
